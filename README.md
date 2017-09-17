@@ -6,18 +6,23 @@ Attention CNN Matching Net
   * preprocess
     * plot2vec.py
     * qa2vec.py
-  * utility 
-    * utility.py
   * word_vec
+    * register.json
+    * glove.42B.300d.json
   * raw_data
     * plot
+      * IMDB_KEY.split.wiki
     * question
   * output_data
     * plot
     * question
+  * utility 
+    * utility.py    
   * model
     * MODEL.py
   * main.py
 
 usage
 -------
+1. put the data given by MovieQA into raw_data folder ()
+2. 
