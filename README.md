@@ -4,19 +4,18 @@ Attention CNN Matching Net
 6 folders and 1 main script are included in 
 
   * preprocess
-   * plot2vec.py
-   * qa2vec.py
+    * plot2vec.py
+    * qa2vec.py
   * utility 
-   *utility.py
+    *utility.py
   * word_vec
   * raw_data
-   * plot
-   * question
+    * plot
+    * question
   * output_data
-   * plot
-   * question
+    * plot
+    * question
   * model
-   * MODEL.py
+    * MODEL.py
   * main.py
-  * D
-   * E
+
