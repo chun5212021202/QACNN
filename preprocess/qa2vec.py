@@ -49,7 +49,7 @@ def compute():
     test = 0
 
     register = json.load(open('../word_vec/register.json'))
-    QA = json.load(open('../raw_data/qa.json'))
+    QA = json.load(open('../raw_data/question/qa.json'))
     
 
     QA_train_vec = []
