@@ -11,16 +11,16 @@ import sys
 
 EPOCH = 50
 X_DIMENSION = 300
-LEARNING_RATE = 0.0005
+LEARNING_RATE = 0.001
 BATCHSIZE = 20
 DROPOUT = 0.8
 choice = 5
 max_plot_num = 101
 max_len = [100,50,50]
 parameter_size = {
-	'cnn_filterSize':{'filter1':[1],'filter2':[1]},	
-		'cnn_filterNum':256,
-		'cnn_filterNum2':256,
+	'cnn_filterSize':{'filter1':[1,3,5],'filter2':[1,3,5]},	
+	'cnn_filterNum':128,
+	'cnn_filterNum2':128,
 	'dnn_hiddenUnits':128
 }
 
@@ -57,9 +57,9 @@ with open('output_data/question/qa.val.json') as data_file:
 
 start = time.time()
 
-acm_net = MODEL.MODEL(BATCHSIZE,X_DIMENSION,DNN_WIDTH,CNN_FILTER_SIZE,CNN_FILTER_SIZE2,CNN_FILTER_NUM,CNN_FILTER_NUM2,LEARNING_RATE,DROPOUT,choice,max_plot_num,max_len,parameterPath, modelcount=0)
+acm_net = MODEL.MODEL(BATCHSIZE,X_DIMENSION,DNN_WIDTH,CNN_FILTER_SIZE,CNN_FILTER_SIZE2,CNN_FILTER_NUM,CNN_FILTER_NUM2,LEARNING_RATE,DROPOUT,choice,max_plot_num,max_len,parameterPath)
 acm_net.initialize()
-accuracy = utility.Train_Test(train_q,val_q,plotFilePath,acm_net,EPOCH,LEARNING_RATE,BATCHSIZE,DROPOUT,choice,max_len)
+accuracy = utility.train(train_q,val_q,plotFilePath,acm_net,EPOCH,LEARNING_RATE,BATCHSIZE,DROPOUT,choice,max_len)
 accuracy_train = np.array(accuracy['train'])
 accuracy_val = np.array(accuracy['val'])
 	
