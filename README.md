@@ -1,5 +1,8 @@
 # QACNN: Query-based Attention CNN
-Attention CNN Matching Net
+
+Implementation of my research: Query-based Attention CNN for Text Similarity Map (https://arxiv.org/abs/1709.05036)
+
+
 6 folders and 1 main script should be included :
 
   * preprocess
