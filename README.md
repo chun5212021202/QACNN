@@ -1,4 +1,4 @@
-# ACM-Net
+# QACNN: Query-based Attention CNN
 Attention CNN Matching Net
 6 folders and 1 main script should be included :
 
